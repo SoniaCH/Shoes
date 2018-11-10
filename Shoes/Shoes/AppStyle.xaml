@@ -2,43 +2,53 @@
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Shoes.AppStyle">
-    <!-- Style Top bar header-->
-    <Style x:Key="StackHeaderTitle" TargetType="StackLayout">
-        <Setter Property="BackgroundColor" Value="#443E43"/>
-        <Setter Property="Orientation" Value="Horizontal"/>
-        <Setter Property="HeightRequest" Value="50"/>
+    <!-- Style label-->
+    <Style x:Key="TitleLabel" TargetType="Label">
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="TextColor" Value="#3E3E3E"/>
     </Style>
-    <!-- Style label bar header-->
+    <Style x:Key="simpleLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="#3E3E3E"/>
+    </Style>
+
+    <Style x:Key="buttonSend" TargetType="Button">
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="HorizontalOptions" Value="End"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="BackgroundColor" Value="#5D94BD"/>
+    </Style>
+    <Style x:Key="buttons" TargetType="Button">
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="Margin" Value="0"/>
+    </Style>
     <Style x:Key="SenderLabel" TargetType="Label">
         <Setter Property="HorizontalOptions" Value="EndAndExpand"/>
         <Setter Property="VerticalOptions" Value="Center"/>
         <Setter Property="FontAttributes" Value="Italic"/>
         <Setter Property="VerticalTextAlignment" Value="Center"/>
         <Setter Property="TextColor" Value="White"/>
-        <Setter Property="FontSize" Value="{Binding SmallFont}"/>
     </Style>
     <Style x:Key="ReceiverLabel" TargetType="Label">
-        <Setter Property="HorizontalOptions" Value="StartAndExpand"/>
+        <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
         <Setter Property="VerticalOptions" Value="Center"/>
         <Setter Property="VerticalTextAlignment" Value="Center"/>
         <Setter Property="FontAttributes" Value="Italic"/>
         <Setter Property="TextColor" Value="Black"/>
-        <Setter Property="FontSize" Value="{Binding SmallFont}"/>
     </Style>
     <Style x:Key="SenderDateLabel" TargetType="Label">
-        <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+        <Setter Property="HorizontalOptions" Value="EndAndExpand"/>
         <Setter Property="VerticalOptions" Value="Center"/>
         <Setter Property="FontAttributes" Value="Italic"/>
-        <Setter Property="TextColor" Value="Gray"/>
         <Setter Property="BackgroundColor" Value="Transparent"/>
-        <Setter Property="FontSize" Value="{Binding MicroFont}"/>
     </Style>
     <Style x:Key="ReceiverDateLabel" TargetType="Label">
-        <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+        <Setter Property="HorizontalOptions" Value="EndAndExpand"/>
         <Setter Property="VerticalOptions" Value="Center"/>
         <Setter Property="FontAttributes" Value="Italic"/>
-        <Setter Property="TextColor" Value="Gray"/>
         <Setter Property="BackgroundColor" Value="Transparent"/>
-        <Setter Property="FontSize" Value="{Binding MicroFont}"/>
     </Style>
 </ResourceDictionary>

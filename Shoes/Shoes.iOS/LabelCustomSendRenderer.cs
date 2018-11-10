@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Foundation;
-using Shoes;
+﻿using Shoes;
 using Shoes.iOS;
-using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-[assembly: ExportRenderer(typeof(LabelCustom), typeof(LabelCustomRenderer))]
+[assembly: ExportRenderer(typeof(LabelCustomSend), typeof(LabelCustomSendRenderer))]
 namespace Shoes.iOS
 {
-    class LabelCustomRenderer : LabelRenderer
+    class LabelCustomSendRenderer:LabelRenderer
     {
         protected override void OnElementChanged(ElementChangedEventArgs<Label> e)
         {
@@ -22,8 +15,8 @@ namespace Shoes.iOS
                 Layer.CornerRadius = 10;
                 Layer.MaskedCorners = (CoreAnimation.CACornerMask)14;
                 var color = Color.FromRgb(191, 182, 167);
-                Layer.ShadowColor = Color.Black.ToCGColor();
-                Control.BackgroundColor = Color.White.ToUIColor();
+                Layer.ShadowColor = Color.Gray.ToCGColor();
+                Control.BackgroundColor = color.ToUIColor();
                 Layer.MasksToBounds = true;
             }
         }

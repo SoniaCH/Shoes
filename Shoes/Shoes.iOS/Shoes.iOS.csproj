@@ -92,6 +92,7 @@
   <ItemGroup>
     <Compile Include="EntryCustomRenderer.cs" />
     <Compile Include="LabelCustomRenderer.cs" />
+    <Compile Include="LabelCustomSendRenderer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="ShapeRenderer.cs" />

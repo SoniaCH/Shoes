@@ -1,15 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
+﻿using Android.Content;
 using Android.Graphics.Drawables;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Shoes;
 using Shoes.Droid;
 using Xamarin.Forms;
@@ -32,8 +22,9 @@ namespace Shoes.Droid
                 float[] radi = { 0, 0, 100, 100, 100, 100, 100, 100 };
                 gd.SetCornerRadii(radi);
                 gd.SetColor(global::Android.Graphics.Color.Rgb(191, 182, 167));
-                this.Control.SetBackgroundDrawable(gd);
-                this.Control.SetPaddingRelative(30, 20, 30, 20);
+                Control.SetBackgroundDrawable(gd);
+                var dnm = (int)App.ScreenWidth / 30;
+                Control.SetPaddingRelative(dnm, dnm, dnm, dnm);
             }
 
         }
