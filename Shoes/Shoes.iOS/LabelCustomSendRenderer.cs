@@ -15,7 +15,6 @@ namespace Shoes.iOS
                 Layer.CornerRadius = 10;
                 Layer.MaskedCorners = (CoreAnimation.CACornerMask)14;
                 var color = Color.FromRgb(191, 182, 167);
-                Layer.ShadowColor = Color.Gray.ToCGColor();
                 Control.BackgroundColor = color.ToUIColor();
                 Layer.MasksToBounds = true;
             }

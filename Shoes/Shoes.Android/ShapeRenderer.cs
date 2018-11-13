@@ -1,4 +1,5 @@
-﻿using Shoes;
+﻿using Android.Content;
+using Shoes;
 using Shoes.Droid;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -8,9 +9,10 @@ namespace Shoes.Droid
 {
     class ShapeRenderer:ViewRenderer<ShapeView, Shape>
     {
-        public ShapeRenderer()
+        public ShapeRenderer(Context context) : base(context)
         {
         }
+
         protected override void OnElementChanged(ElementChangedEventArgs<ShapeView> e)
         {
             base.OnElementChanged(e);

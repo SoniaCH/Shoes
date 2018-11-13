@@ -20,9 +20,9 @@ namespace Shoes.iOS
             if (Control != null)
             {
                 Layer.CornerRadius = 10;
-                Layer.MaskedCorners = (CoreAnimation.CACornerMask)14;
-                var color = Color.FromRgb(191, 182, 167);
-                Layer.ShadowColor = Color.Black.ToCGColor();
+                Layer.MaskedCorners = (CoreAnimation.CACornerMask)14; 
+                Layer.BorderColor = Color.Silver.ToCGColor();
+                Layer.BorderWidth = 1;
                 Control.BackgroundColor = Color.White.ToUIColor();
                 Layer.MasksToBounds = true;
             }
